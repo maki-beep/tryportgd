@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        display: ["Jersey 25", "cursive"],
+        pixel: ["Jersey 10", "cursive"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +62,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        brand: {
+          green: "hsl(var(--brand-green))",
+          "green-light": "hsl(var(--brand-green-light))",
+          red: "hsl(var(--brand-red))",
+          blue: "hsl(var(--brand-blue))",
+          dark: "hsl(var(--brand-dark))",
+          "dark-line": "hsl(var(--brand-dark-line))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +93,16 @@ export default {
             height: "0",
           },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        marquee: "marquee 22s linear infinite",
+        "marquee-slow": "marquee 40s linear infinite",
       },
     },
   },
